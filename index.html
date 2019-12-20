@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>陈双是个大傻子吗？</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=0.1, maximum-scale=1.0, user-scalable=yes"/>
+
+</head>
+<body>
+ <div class="but" onclick="submit()">请点击</div>
+</body>
+<script>
+  function  submit() {
+    if(window.confirm('陈双是个大傻子，请确认？')){
+      if(window.confirm('你确认陈双是个大傻子？')){
+        alert("对，陈双就是个大傻子！")
+      }else{
+        submit();
+      }
+    }else{
+      if(window.confirm('成双难道不是个大傻子吗？')){
+        alert("对，陈双就是个大傻子！")
+      }else{
+        submit();
+      }
+    }
+  }
+</script>
+<style>
+  .but{
+    position: fixed;
+    width: 200px;
+    height: 200px;
+    background: blueviolet;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 200px;
+    font-size: 50px;
+    color: #FFFFFF;
+    top: 50%;
+    margin-top: -100px;
+    left: 50%;
+    margin-left: -100px;
+  }
+  .but:active{
+    background: red;
+  }
+</style>
+</html>
